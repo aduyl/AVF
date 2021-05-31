@@ -17,6 +17,8 @@ class VideoView: UIView {
     init(video: Video) {
         self.video = video
         super.init(frame: .zero)
+        
+        addSubview(videoPlayerView)
         initializePlayer()
     }
     
@@ -24,18 +26,22 @@ class VideoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        videoPlayerView.frame = bounds
+    }
+    
     private func addVideoToPlayer() {
         let asset = AVURLAsset(url: video.url)
         let item = AVPlayerItem(asset: asset)
         player.replaceCurrentItem(with: item)
-        }
+    }
     
     private func initializePlayer() {
         videoPlayerView.player = player
         addVideoToPlayer()
        
         player.play()
-        
     }
     
     func pause() {

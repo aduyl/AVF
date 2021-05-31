@@ -18,6 +18,7 @@
 		04114A6D26638BF40022A2FC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A6C26638BF40022A2FC /* Video.swift */; };
 		04114A6F2663A2770022A2FC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A6E2663A2770022A2FC /* VideoPlayerView.swift */; };
 		04114A712663CA3F0022A2FC /* storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A702663CA3F0022A2FC /* storage.swift */; };
+		E5BE3BCC26656BB200501A03 /* VideoPlayerToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE3BCB26656BB200501A03 /* VideoPlayerToolbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		04114A6C26638BF40022A2FC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		04114A6E2663A2770022A2FC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		04114A702663CA3F0022A2FC /* storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storage.swift; sourceTree = "<group>"; };
+		E5BE3BCB26656BB200501A03 /* VideoPlayerToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerToolbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				04114A552660211C0022A2FC /* SceneDelegate.swift */,
 				04114A572660211C0022A2FC /* ViewController.swift */,
 				04114A6726637DA10022A2FC /* VideoPlayerController.swift */,
+				E5BE3BCB26656BB200501A03 /* VideoPlayerToolbarView.swift */,
 				04114A512660211C0022A2FC /* Products */,
 				04114A592660211C0022A2FC /* Main.storyboard */,
 				04114A5C266021210022A2FC /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				04114A542660211C0022A2FC /* AppDelegate.swift in Sources */,
 				04114A6826637DA20022A2FC /* VideoPlayerController.swift in Sources */,
 				04114A712663CA3F0022A2FC /* storage.swift in Sources */,
+				E5BE3BCC26656BB200501A03 /* VideoPlayerToolbarView.swift in Sources */,
 				04114A562660211C0022A2FC /* SceneDelegate.swift in Sources */,
 				04114A6F2663A2770022A2FC /* VideoPlayerView.swift in Sources */,
 			);
