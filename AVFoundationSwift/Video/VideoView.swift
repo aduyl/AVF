@@ -68,13 +68,5 @@ class VideoView: UIView {
             player.currentItem?.seek(to: CMTime(seconds: Double(currentTime - rewindTime), preferredTimescale: 1))
         }
     }
-    
-    func isPlaying() -> Bool {
-        if(player.currentItem?.currentTime() != player.currentItem?.duration){
-            return true
-        }else{
-            return false
-        }
-    }
 }
 
