@@ -51,5 +51,30 @@ class VideoView: UIView {
     func play() {
       player.play()
     }
+    func fastForward(forwardTime: Double = 15.0){
+        let currentTime = player.currentItem?.currentTime().seconds ?? 0.0
+        let totalTime = player.currentItem?.duration.seconds ?? 0.0
+        if(totalTime - currentTime < 15.0){
+            player.currentItem?.seek(to: CMTime(seconds: Double(totalTime), preferredTimescale: 1))
+        }else{
+            player.currentItem?.seek(to: CMTime(seconds: Double(currentTime + forwardTime), preferredTimescale: 1))
+        }
+    }
+    func revindVideo(rewindTime: Double = 15.0){
+        let currentTime = player.currentItem?.currentTime().seconds ?? 0.0
+        if(currentTime < 15.0){
+            player.currentItem?.seek(to: CMTime(seconds: 0.0, preferredTimescale: 1))
+        }else{
+            player.currentItem?.seek(to: CMTime(seconds: Double(currentTime - rewindTime), preferredTimescale: 1))
+        }
+    }
+    
+    func isPlaying() -> Bool {
+        if(player.currentItem?.currentTime() != player.currentItem?.duration){
+            return true
+        }else{
+            return false
+        }
+    }
 }
 

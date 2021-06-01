@@ -19,12 +19,10 @@ class VideoPlayerView: UIView {
       }
     }
     
-    // 5 Override the layerClass
     override class var layerClass: AnyClass {
       return AVPlayerLayer.self
     }
     
-    // 6 Add accessor for playerLayer so you don't need to
     var playerLayer: AVPlayerLayer {
       return layer as! AVPlayerLayer
     }

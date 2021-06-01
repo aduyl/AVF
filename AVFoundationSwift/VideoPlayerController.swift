@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import AVKit
 
 class VideoPlayerController: UIViewController {
     
@@ -14,6 +14,7 @@ class VideoPlayerController: UIViewController {
     private let videoView: VideoView
     private let toolbarView = VideoPlayerToolbarView(frame: .zero)
     private var isPlaying = false
+   
     
     init(video: Video) {
         self.video = video
@@ -26,30 +27,13 @@ class VideoPlayerController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    private var video: Video?
-//    func configure(video: Video){
-//            self.video = video
-//    }
-//    let videoPlayer = VideoView(video: video)
-    
-//    @IBOutlet weak var lab: UILabel!
-
-//    @IBOutlet weak var playButton: UIButton!
-//    var check = true
-    
-    
-//     в идеале нужено брать статус из плеера
-//    private var isPlaying: Bool {
-//        return videoView.isPlaying
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(videoView)
         view.addSubview(toolbarView)
         toolbarView.playButton.addTarget(self, action: #selector(didPressOnPlayButton), for: .touchUpInside)
-//        videoPlayer.frame = CGRect(x: 0, y: 0, width: 200, height: 600)
-//        videoPlayer.play()
+        toolbarView.fastForvardButton.addTarget(self, action: #selector(didPressOnFastForvardButton), for: .touchUpInside)
+        toolbarView.rewindButton.addTarget(self, action: #selector(didPressOnRewindButton), for: .touchUpInside)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -68,36 +52,33 @@ class VideoPlayerController: UIViewController {
         switchPlaying()
     }
     
+    @objc private func didPressOnFastForvardButton() {
+        fastForwardPlaying()
+    }
+    
+    @objc private func didPressOnRewindButton() {
+        rewindPlaying()
+    }
+    
+    
     private func switchPlaying() {
         if isPlaying {
             videoView.pause()
+            toolbarView.playButton.setImage(UIImage.init(systemName: "pause"), for: .normal)
         } else {
             videoView.play()
+            toolbarView.playButton.setImage(UIImage.init(systemName: "play"), for: .normal)
         }
         isPlaying = !isPlaying
     }
     
-//    @IBAction func pushPlayButton(_ sender: Any){
-//        if check {
-//            self.playButton.setImage(UIImage(systemName:"pause" ), for: UIControl.State.init())
-//            check = !check
-//            //videoPlayer.stop()
-//        } else {
-//            self.playButton.setImage(UIImage(systemName:"play" ), for: UIControl.State.init())
-//            check = !check
-//           // videoPlayer.play()
-//        }
-//
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func fastForwardPlaying(){
+        videoView.fastForward()
+        
     }
-    */
-
+    
+    private func rewindPlaying(){
+        videoView.revindVideo()
+    }
+    
 }
