@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04114A502660211C0022A2FC /* AVFoundationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04114A502660211C0022A2FC /* CustomVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04114A532660211C0022A2FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04114A552660211C0022A2FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04114A572660211C0022A2FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,20 +50,20 @@
 		04114A472660211C0022A2FC = {
 			isa = PBXGroup;
 			children = (
-				04114A522660211C0022A2FC /* AVFoundationSwift */,
+				04114A522660211C0022A2FC /* CustomVideoPlayer */,
 			);
 			sourceTree = "<group>";
 		};
 		04114A512660211C0022A2FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04114A502660211C0022A2FC /* AVFoundationSwift.app */,
+				04114A502660211C0022A2FC /* CustomVideoPlayer.app */,
 			);
 			name = Products;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		04114A522660211C0022A2FC /* AVFoundationSwift */ = {
+		04114A522660211C0022A2FC /* CustomVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				04114A6B26638AF50022A2FC /* Video */,
@@ -78,7 +78,7 @@
 				04114A5E266021210022A2FC /* LaunchScreen.storyboard */,
 				04114A61266021210022A2FC /* Info.plist */,
 			);
-			path = AVFoundationSwift;
+			path = CustomVideoPlayer;
 			sourceTree = "<group>";
 		};
 		04114A6B26638AF50022A2FC /* Video */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04114A4F2660211C0022A2FC /* AVFoundationSwift */ = {
+		04114A4F2660211C0022A2FC /* CustomVideoPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04114A64266021210022A2FC /* Build configuration list for PBXNativeTarget "AVFoundationSwift" */;
+			buildConfigurationList = 04114A64266021210022A2FC /* Build configuration list for PBXNativeTarget "CustomVideoPlayer" */;
 			buildPhases = (
 				04114A4C2660211C0022A2FC /* Sources */,
 				04114A4D2660211C0022A2FC /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = AVFoundationSwift;
+			name = CustomVideoPlayer;
 			productName = AVFoundationSwift;
-			productReference = 04114A502660211C0022A2FC /* AVFoundationSwift.app */;
+			productReference = 04114A502660211C0022A2FC /* CustomVideoPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04114A4B2660211C0022A2FC /* Build configuration list for PBXProject "AVFoundationSwift" */;
+			buildConfigurationList = 04114A4B2660211C0022A2FC /* Build configuration list for PBXProject "CustomVideoPlayer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04114A4F2660211C0022A2FC /* AVFoundationSwift */,
+				04114A4F2660211C0022A2FC /* CustomVideoPlayer */,
 			);
 		};
 /* End PBXProject section */
@@ -316,12 +316,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AVFoundationSwift/Info.plist;
+				INFOPLIST_FILE = CustomVideoPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lyudasukh.AVFoundationSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = lyudasukh.CustomVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,12 +334,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AVFoundationSwift/Info.plist;
+				INFOPLIST_FILE = CustomVideoPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lyudasukh.AVFoundationSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = lyudasukh.CustomVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04114A4B2660211C0022A2FC /* Build configuration list for PBXProject "AVFoundationSwift" */ = {
+		04114A4B2660211C0022A2FC /* Build configuration list for PBXProject "CustomVideoPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04114A62266021210022A2FC /* Debug */,
@@ -358,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04114A64266021210022A2FC /* Build configuration list for PBXNativeTarget "AVFoundationSwift" */ = {
+		04114A64266021210022A2FC /* Build configuration list for PBXNativeTarget "CustomVideoPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04114A65266021210022A2FC /* Debug */,
