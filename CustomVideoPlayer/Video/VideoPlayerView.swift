@@ -10,21 +10,21 @@ import AVFoundation
 
 class VideoPlayerView: UIView {
     var player: AVPlayer? {
-      get {
-        return playerLayer.player
-      }
+        get {
+            return playerLayer.player
+        }
 
-      set {
-        playerLayer.player = newValue
-      }
+        set {
+            playerLayer.player = newValue
+        }
     }
     
     override class var layerClass: AnyClass {
-      return AVPlayerLayer.self
+        return AVPlayerLayer.self
     }
     
     var playerLayer: AVPlayerLayer {
-      return layer as! AVPlayerLayer
+        return layer as! AVPlayerLayer
     }
     
 }

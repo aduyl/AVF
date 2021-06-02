@@ -14,9 +14,9 @@
 		04114A5D266021210022A2FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04114A5C266021210022A2FC /* Assets.xcassets */; };
 		04114A60266021210022A2FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04114A5E266021210022A2FC /* LaunchScreen.storyboard */; };
 		04114A6826637DA20022A2FC /* VideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A6726637DA10022A2FC /* VideoPlayerController.swift */; };
-		04114A6A26638ADF0022A2FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A6926638ADF0022A2FC /* VideoView.swift */; };
 		04114A6D26638BF40022A2FC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A6C26638BF40022A2FC /* Video.swift */; };
 		04114A6F2663A2770022A2FC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114A6E2663A2770022A2FC /* VideoPlayerView.swift */; };
+		186BE63F2667D1C80040C7DA /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BE63E2667D1C80040C7DA /* VideoPlayer.swift */; };
 		E5BE3BCC26656BB200501A03 /* VideoPlayerToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE3BCB26656BB200501A03 /* VideoPlayerToolbarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		04114A5F266021210022A2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04114A61266021210022A2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04114A6726637DA10022A2FC /* VideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerController.swift; sourceTree = "<group>"; };
-		04114A6926638ADF0022A2FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		04114A6C26638BF40022A2FC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		04114A6E2663A2770022A2FC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		186BE63E2667D1C80040C7DA /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		E5BE3BCB26656BB200501A03 /* VideoPlayerToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerToolbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,9 +84,9 @@
 		04114A6B26638AF50022A2FC /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				04114A6926638ADF0022A2FC /* VideoView.swift */,
 				04114A6C26638BF40022A2FC /* Video.swift */,
 				04114A6E2663A2770022A2FC /* VideoPlayerView.swift */,
+				186BE63E2667D1C80040C7DA /* VideoPlayer.swift */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -163,12 +163,12 @@
 			files = (
 				04114A582660211C0022A2FC /* ViewController.swift in Sources */,
 				04114A6D26638BF40022A2FC /* Video.swift in Sources */,
-				04114A6A26638ADF0022A2FC /* VideoView.swift in Sources */,
 				04114A542660211C0022A2FC /* AppDelegate.swift in Sources */,
 				04114A6826637DA20022A2FC /* VideoPlayerController.swift in Sources */,
 				E5BE3BCC26656BB200501A03 /* VideoPlayerToolbarView.swift in Sources */,
 				04114A562660211C0022A2FC /* SceneDelegate.swift in Sources */,
 				04114A6F2663A2770022A2FC /* VideoPlayerView.swift in Sources */,
+				186BE63F2667D1C80040C7DA /* VideoPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
